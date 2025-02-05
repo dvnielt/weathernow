@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.weather-dashboard {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  backdrop-filter: blur(10px);
+}
+
+.app-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.search-bar {
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.7);
+  text-align: center;
+  color: #2c3e50;
+}
+
+.current-weather {
+  background: rgba(216, 216, 216, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+}
+
+.current-weather h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-info img {
+  width: 100px;
+  height: 100px;
+}
+
+.temp-details h3 {
+  font-size: 48px;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.forecast {
+  background: rgba(216, 216, 216, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.forecast-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.forecast-day img {
+  width: 40px;
+  height: 40px;
+}
+
+.forecast-day p {
+  color: #2c3e50;
+  margin: 5px 0;
+}
